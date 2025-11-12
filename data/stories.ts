@@ -1,7 +1,6 @@
 import { AnimationType } from '../types';
 import type { Story } from '../types';
 
-// Helper to encode SVG for data URI
 const svgToDataUri = (svg: string) => `data:image/svg+xml;base64,${btoa(svg)}`;
 
 export const stories: Story[] = [
@@ -52,16 +51,7 @@ Solo eso y nada más».
         title: "El Gato Negro",
         tagline: "Una bestia de infinita maldad.",
         animationType: AnimationType.BlackCat,
-        characterImage: svgToDataUri(`
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" fill="#000" />
-  <circle cx="35" cy="40" r="10" fill="yellow" />
-  <circle cx="65" cy="40" r="10" fill="yellow" />
-  <path d="M30 40 L 35 43 L 40 40" stroke="black" stroke-width="2" fill="none" />
-  <path d="M60 40 L 65 43 L 70 40" stroke="black" stroke-width="2" fill="none" />
-  <path d="M20,80 Q50,60 80,80" stroke="#222" stroke-width="4" fill="none"/>
-</svg>
-`),
+        characterImage: "../src/gn.jpg",
         cardImage: svgToDataUri(`
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <rect width="100" height="100" fill="#111" />

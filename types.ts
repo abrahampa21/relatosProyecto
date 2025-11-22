@@ -10,7 +10,7 @@ export interface Story {
     title: string;
     tagline: string;
     fullText: string;
-    animationType: AnimationType;
+    animationType: AnimationType,
     characterImage: string; 
     cardImage: string; 
 }

@@ -26,12 +26,6 @@ const App: React.FC = () => {
     }, 500);
   };
 
-  useEffect(() => {
-    document.body.style.overflow = selectedStory ? 'auto' : 'hidden';
-    return () => {
-        document.body.style.overflow = 'auto';
-    };
-  }, [selectedStory]);
 
 
   return (

@@ -1,9 +1,10 @@
-
-import React, { useState, useEffect } from 'react';
-import LandingPage from './components/LandingPage';
-import StoryReader from './components/StoryReader';
-import { stories } from './data/stories';
-import type { Story } from './types';
+import React, { useState, useEffect } from "react";
+import LandingPage from "./components/LandingPage";
+import StoryReader from "./components/StoryReader";
+import { stories } from "./data/stories";
+import NavBar from "./components/NavBar";
+import Biography from "./components/Biography";
+import type { Story } from "./types";
 
 const App: React.FC = () => {
   const [selectedStory, setSelectedStory] = useState<Story | null>(null);
@@ -26,20 +27,25 @@ const App: React.FC = () => {
     }, 500);
   };
 
-
-
   return (
-    <main className="bg-black text-gray-300 min-h-screen">
-      <div className={`transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
-        {selectedStory ? (
-          <StoryReader story={selectedStory} onGoBack={handleGoBack} />
-        ) : (
-          <LandingPage stories={stories} onSelectStory={handleSelectStory} />
-        )}
+    <div className="page-content">
+      {!selectedStory && <NavBar/>}
+      {!selectedStory && <Biography />}
+      <div className="bg-black text-gray-300 min-h-screen">
+        <div
+          className={`transition-opacity duration-500 ${
+            isFading ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          {selectedStory ? (
+            <StoryReader story={selectedStory} onGoBack={handleGoBack} />
+          ) : (
+            <LandingPage stories={stories} onSelectStory={handleSelectStory} />
+          )}
+        </div>
       </div>
-    </main>
+    </div>
   );
 };
 
 export default App;
-   

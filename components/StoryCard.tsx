@@ -38,8 +38,8 @@ const StoryCard: React.FC<StoryCardProps> = ({ story, onSelect }) => {
       <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-0 group-hover:opacity-10`}>
         {getIcon()}
       </div>
-      <div className="relative z-10">
-        <h3 className="text-xl font-bold text-gray-200">{story.title}</h3>
+      <div className="titles relative z-10">
+        <h3 className="text-lg font-sans font-bold text-gray-200">{story.title}</h3>
         <p className="text-gray-400 italic mt-2 text-sm">"{story.tagline}"</p>
       </div>
     </div>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 body {
   font-family: "Crimson Text", serif;
   scrollbar-width: thin;
@@ -16,4 +18,170 @@ body::-webkit-scrollbar-thumb {
 }
 .font-display {
   font-family: "UnifrakturMaguntia", cursive;
+  font-size: 50px;
+}
+
+
+/*NavBar*/
+header {
+  font-family: sans-serif, "Plus Jakarta Sans";
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  padding: 15px 20px;
+}
+
+header h1 {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 28px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+nav img {
+  width: 120px;
+  border-radius: 100%;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+nav .links a {
+  font-size: 18px;
+}
+
+nav .links a:hover {
+  text-decoration: underline;
+}
+
+nav .links-button {
+  display: flex;
+  align-items: center;
+  gap: 4.4rem;
+  justify-content: space-between;
+  padding-right: 2.5rem;
+}
+
+nav .button-books {
+  background-color: #1a2a3b;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+}
+
+main .title {
+  font-family: sans-serif;
+}
+
+/*Sections biography*/
+.sections{
+  background-color: rgb(2,4,12);
+  color: #fff;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle #bars{
+  font-size: 35px;
+}
+
+.menu {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 80%;
+  right: 30px;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  height: fit-content;
+}
+
+.menu .button-books{
+  color: #fff;
+}
+
+.menu li a {
+  color: white;
+}
+
+.menu.menu-open {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (max-width: 1150px) {
+  header h1 {
+    font-size: 25px;
+  }
+  nav .links a,
+  nav .button-books {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .toggle {
+    display: block;
+  }
+  nav .links {
+    display: none;
+  }
+
+  .toggle .fa-bars {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 785px) {
+  .button-books {
+    display: none;
+  }
+
+  nav img {
+    width: 90px;
+  }
+}
+
+@media (max-width: 450px) {
+  nav img {
+    width: 60px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  header nav {
+    padding-left: 1rem;
+  }
 }

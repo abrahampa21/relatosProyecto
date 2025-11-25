@@ -1,8 +1,8 @@
 const Biography = () => {
   return (
-    <div className="sections">
-      <section>
-        <div>
+    <div className="sections-div">
+      <section class="section" id="dato1">
+        <div className="content">
           <img src="../src/edgar2.jpg" alt="Edgar Allan Poe" />
           <p>
             Edgar Allan Poe nació en Boston, Estados Unidos en 1809. Sus padres
@@ -12,8 +12,8 @@ const Biography = () => {
           </p>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="section" id="dato2">
+        <div className="content">
           <img src="../src/poeCatterina.jpg" alt="Edgar Allan Poe" />
           <p>
             Es considerado como el inventor del relato detectivesco, contribuyó
@@ -26,8 +26,8 @@ const Biography = () => {
           </p>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="section" id="dato3">
+        <div className="content">
           <img src="../src/virginiaEdgar.webp" alt="Virginia & Edgar" />
           <p>
             Trágicamente su mujer murió dos años después de tuberculosis, y

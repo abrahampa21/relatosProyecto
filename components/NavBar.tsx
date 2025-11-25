@@ -27,16 +27,13 @@ const NavBar = () => {
           {/* MENÚ  */}
           <div className={`menu  ${menuOpen ? "menu-open" : ""}`} id="menu">
             <li>
-              <a href="#">Dato 1</a>
+              <a href="#dato2">Carrera</a>
             </li>
             <li>
-              <a href="#">Dato 2</a>
+              <a href="#dato3">Muerte y misterio</a>
             </li>
             <li>
-              <a href="#">Dato 3</a>
-            </li>
-            <li>
-              <a href="#">Dato 4</a>
+              <a href="#relatos">Relatos</a>
             </li>
             <li>
               <a href="#">
@@ -47,16 +44,13 @@ const NavBar = () => {
 
           <ul className="links">
             <li>
-              <a href="#">Dato 1</a>
+              <a href="#dato2">Carrera</a>
             </li>
             <li>
-              <a href="#">Dato 2</a>
+              <a href="#dato3">Muerte y misterio</a>
             </li>
             <li>
-              <a href="#">Dato 3</a>
-            </li>
-            <li>
-              <a href="#">Dato 4</a>
+              <a href="#relatos">Relatos</a>
             </li>
           </ul>
           <a href="#" className="button-books">

@@ -13,7 +13,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ stories, onSelectStory }) => 
   const [hoveredStory, setHoveredStory] = useState<AnimationType | null>(null);
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-center p-4">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-center p-4" id="relatos">
       <AnimatedBackground hoveredStory={hoveredStory} />
       <div className="relative z-10 text-center">
         <h2 className="font-display text-red-800 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">

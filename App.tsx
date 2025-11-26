@@ -4,6 +4,7 @@ import StoryReader from "./components/StoryReader";
 import { stories } from "./data/stories";
 import NavBar from "./components/NavBar";
 import Biography from "./components/Biography";
+import Footer from "./components/Footer";
 import type { Story } from "./types";
 
 const App: React.FC = () => {
@@ -44,6 +45,7 @@ const App: React.FC = () => {
           )}
         </div>
       </div>
+      {!selectedStory && <Footer/>}
     </div>
   );
 };

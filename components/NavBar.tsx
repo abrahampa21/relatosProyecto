@@ -4,8 +4,8 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header>
-      <nav>
+    <header >
+      <nav className="fade-in">
         <div className="img">
           <img src="../src/EdgarAllanPoe.jpg" alt="Edgar Allan Poe" />
           <h1>Edgar Allan Poe</h1>
@@ -24,7 +24,7 @@ const NavBar = () => {
             ></i>
           </div>
 
-          {/* MENÚ  */}
+          {/* Menú mobile  */}
           <div className={`menu  ${menuOpen ? "menu-open" : ""}`} id="menu">
             <li>
               <a href="#dato2">Carrera</a>
@@ -42,6 +42,7 @@ const NavBar = () => {
             </li>
           </div>
 
+          {/* Normal menú  */}
           <ul className="links">
             <li>
               <a href="#dato2">Carrera</a>

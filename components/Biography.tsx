@@ -3,8 +3,8 @@ const Biography = () => {
     <div className="sections-div">
       <section class="section" id="dato1">
         <div className="content">
-          <img src="../src/edgar2.jpg" alt="Edgar Allan Poe" />
-          <p>
+          <img src="../src/edgar2.jpg" className="fade-in" alt="Edgar Allan Poe" />
+          <p className="fade-in">
             Edgar Allan Poe nació en Boston, Estados Unidos en 1809. Sus padres
             murieron cuando él todavía era niño, y se dedicó a la escritura de
             relatos cortos, intentado hacer de esta su forma de vida (primer

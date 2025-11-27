@@ -1,9 +1,9 @@
 const Biography = () => {
   return (
     <div className="sections-div">
-      <section class="section" id="dato1">
+      <section className="section" id="dato1">
         <div className="content">
-          <img src="../src/edgar2.jpg" className="fade-in" alt="Edgar Allan Poe" />
+          <img src="../src/edgar-allan-poe.png"  alt="Edgar Allan Poe" />
           <p className="fade-in">
             Edgar Allan Poe nació en Boston, Estados Unidos en 1809. Sus padres
             murieron cuando él todavía era niño, y se dedicó a la escritura de
@@ -12,7 +12,7 @@ const Biography = () => {
           </p>
         </div>
       </section>
-      <section class="section" id="dato2">
+      <section className="section" id="dato2">
         <div className="content">
           <img src="../src/poeCatterina.jpg" alt="Edgar Allan Poe" />
           <p>
@@ -26,7 +26,7 @@ const Biography = () => {
           </p>
         </div>
       </section>
-      <section class="section" id="dato3">
+      <section className="section" id="dato3">
         <div className="content">
           <img src="../src/virginiaEdgar.webp" alt="Virginia & Edgar" />
           <p>

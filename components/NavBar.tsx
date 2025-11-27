@@ -36,7 +36,7 @@ const NavBar = () => {
               <a href="#relatos">Relatos</a>
             </li>
             <li>
-              <a href="#">
+              <a href="../src/relatos.pdf" download>
                 ¡Descarga su antología!
               </a>
             </li>
@@ -54,7 +54,7 @@ const NavBar = () => {
               <a href="#relatos">Relatos</a>
             </li>
           </ul>
-          <a href="#" className="button-books">
+          <a href="../src/relatos.pdf" download className="button-books">
             ¡Descarga su antología!
           </a>
         </div>

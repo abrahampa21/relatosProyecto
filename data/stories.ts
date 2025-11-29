@@ -9,8 +9,8 @@ export const stories: Story[] = [
         title: "El Cuervo",
         tagline: "Dijo el cuervo, 'Nunca más.' ",
         animationType: AnimationType.Raven,
-        characterImage: "../src/cuervo.jpg",
-        cardImage: "../src/raven2.webp",
+        characterImage: "img/cuervo.jpg",
+        cardImage: "img/raven2.webp",
         fullText: `
 En una noche oscura y lúgubre, mientras meditaba, débil y cansado,
 sobre muchos volúmenes extraños y curiosos de sabiduría olvidada—
@@ -26,8 +26,8 @@ Solo eso y nada más».
         title: "El Gato Negro",
         tagline: "Una bestia de infinita maldad.",
         animationType: AnimationType.BlackCat,
-        characterImage: "../src/gn.jpg",
-        cardImage: "../src/bc.jpg",
+        characterImage: "img/gn.jpg",
+        cardImage: "img/bc.jpg",
         fullText: `
 Para la narración más salvaje y a la vez más sencilla que estoy a punto de escribir, no espero ni solicito que me crean. Sería una locura esperarlo, en un caso donde mis propios sentidos rechazan su propia evidencia. Sin embargo, no estoy loco, y ciertamente no sueño. Pero mañana muero, y hoy quisiera desahogar mi alma.
 ... [Continuará] ...
@@ -38,8 +38,8 @@ Para la narración más salvaje y a la vez más sencilla que estoy a punto de es
         title: "Los Crímenes de la Calle Morgue",
         tagline: "Un crimen extraordinario e incomprensible",
         animationType: AnimationType.Morgue,
-        characterImage: "../src/lcdlcm.jpg",
-        cardImage: "../src/orangutan.jpg",
+        characterImage: "img/lcdlcm.jpg",
+        cardImage: "img/orangutan.jpg",
         fullText: `
 Las características mentales que se consideran analíticas, en sí mismas, son poco susceptibles de análisis. Las apreciamos únicamente por sus efectos. Sabemos de ellas, entre otras cosas, que cuando se poseen en exceso, constituyen para quien las posee una fuente de vívido disfrute.
 ... [Continuará] ...
@@ -50,8 +50,8 @@ Las características mentales que se consideran analíticas, en sí mismas, son 
         title: "El Diablo En El Campanario",
         tagline: "¿Qué hora es?.",
         animationType: AnimationType.Belfry,
-        characterImage: "../src/belfry.jpg",
-        cardImage: "../src/tdib.jpg",
+        characterImage: "img/belfry.jpg",
+        cardImage: "img/tdib.jpg",
         fullText: `
 Todo el mundo sabe, en términos generales, que el lugar más hermoso del mundo es —o, por desgracia, era— el municipio holandés de Vondervotteimittiss. Sin embargo, como se encuentra algo alejado de las carreteras principales, en una ubicación un tanto apartada, quizá muy pocos de mis lectores lo hayan visitado alguna vez.
 ... [Continuará] ...

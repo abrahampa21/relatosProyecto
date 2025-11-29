@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <img src="../src/img-footer.jpg" class="img-footer" alt="Edgar Allan Poe" />
+        <img src="img/img-footer.jpg" class="img-footer" alt="Edgar Allan Poe" />
       </div>
       <p className="copyright">
         Todos los derechos reservados &copy; The Organizers

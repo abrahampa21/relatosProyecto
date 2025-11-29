@@ -36,7 +36,7 @@ const NavBar = () => {
               <a href="#relatos">Relatos</a>
             </li>
             <li>
-              <a href="img/relatos.pdf" download>
+              <a href="img/Antología - Edgar Allan Poe.pdf" download>
                 ¡Descarga su antología!
               </a>
             </li>
@@ -54,7 +54,7 @@ const NavBar = () => {
               <a href="#relatos">Relatos</a>
             </li>
           </ul>
-          <a href="img/relatos.pdf" download className="button-books">
+          <a href="img/Antología - Edgar Allan Poe.pdf" download className="button-books">
             ¡Descarga su antología!
           </a>
         </div>

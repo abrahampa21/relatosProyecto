@@ -28,7 +28,7 @@ const StoryReader: React.FC<StoryReaderProps> = ({ story, onGoBack }) => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black pb-24 relative">
+    <div className="main-reader min-h-screen bg-black pb-24 relative">
       {story.animationType !== AnimationType.BlackCat ||
         (story.animationType !== AnimationType.Morgue && (
           <StoryAmbiance

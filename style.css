@@ -183,6 +183,7 @@ main .title {
   font-size: 35px;
 }
 
+/* Asegura que el menú siempre esté por encima de la imagen y otros elementos */
 .menu {
   opacity: 0;
   transform: translateY(-20px);
@@ -200,7 +201,7 @@ main .title {
   backdrop-filter: blur(30px);
   height: fit-content;
   border-radius: 10px;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .menu .button-books {
@@ -286,6 +287,15 @@ footer h3 {
   }
 }
 
+@media (min-height: 900px){
+  .main-reader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+}
+
 @media (max-width: 1150px) {
   header h1 {
     font-size: 25px;
@@ -349,6 +359,18 @@ footer h3 {
     text-align: center;
   }
 
+  .info{
+    gap: 100px;
+  }
+
+  .content-media{
+    margin: 0 auto;
+  }
+
+  .img-footer{
+    margin-left: 0;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -387,6 +409,17 @@ footer h3 {
     width: 100%;
   }
 
+  .info{
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-footer{
+    order: -1;
+    margin: 0 auto;
+  }
+
   .story-reader {
     padding: 1.5rem;
   }
@@ -403,6 +436,7 @@ footer h3 {
 
   .btn-back {
     left: 15px !important;
+    font-size: 14px;
   }
 
   .btn-story {

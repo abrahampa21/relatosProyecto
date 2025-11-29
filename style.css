@@ -83,11 +83,17 @@ nav .links-button {
   padding-right: 2.5rem;
 }
 
-nav .button-books {
-  background-color: #1a2a3b;
+.button-books {
+  background-color: rgb(21, 32, 48);
   padding: 1rem 1.5rem;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
 }
+
+.button-books:hover{
+  background-color: rgb(153, 27, 27);
+}
+
 
 main .title {
   font-family: sans-serif;
@@ -241,9 +247,10 @@ footer .fa-brands {
 }
 
 .img-footer {
-  width: 100px;
+  width: 130px;
+  height: 150px;
   border-radius: 50%;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 footer .fa-brands:nth-child(4) {
@@ -283,8 +290,7 @@ footer h3 {
   header h1 {
     font-size: 25px;
   }
-  nav .links a,
-  nav .button-books {
+  nav .links a, .button-books {
     font-size: 16px;
   }
 }

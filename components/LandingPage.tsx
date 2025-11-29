@@ -22,7 +22,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ stories, onSelectStory }) => 
       </div>
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-7xl w-full">
         {stories.map((story) => (
-          <div
+          <div data-aos="zoom-in"
             key={story.id}
             onMouseEnter={() => setHoveredStory(story.animationType)}
             onMouseLeave={() => setHoveredStory(null)}

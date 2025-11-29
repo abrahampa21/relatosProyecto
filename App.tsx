@@ -6,6 +6,8 @@ import NavBar from "./components/NavBar";
 import Biography from "./components/Biography";
 import Footer from "./components/Footer";
 import type { Story } from "./types";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App: React.FC = () => {
   const [selectedStory, setSelectedStory] = useState<Story | null>(null);
@@ -28,9 +30,17 @@ const App: React.FC = () => {
     }, 500);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      once: false,
+      easing: "ease-out",
+    });
+  }, []);
+
   return (
     <div className="page-content">
-      {!selectedStory && <NavBar/>}
+      {!selectedStory && <NavBar />}
       {!selectedStory && <Biography />}
       <div className="bg-black text-gray-300 min-h-screen">
         <div
@@ -45,7 +55,7 @@ const App: React.FC = () => {
           )}
         </div>
       </div>
-      {!selectedStory && <Footer/>}
+      {!selectedStory && <Footer />}
     </div>
   );
 };

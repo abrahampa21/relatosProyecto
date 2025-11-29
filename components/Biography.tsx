@@ -1,20 +1,18 @@
-
-
 const Biography = () => {
   return (
     <div className="sections-div">
-      <section className="section" id="dato1">
+      <section className="section" id="dato1" data-aos="fade-down">
         <div className="content">
           <img src="../src/edgar-allan-poe.png"  alt="Edgar Allan Poe" />
           <p className="fade-in">
             Edgar Allan Poe nació en Boston, Estados Unidos en 1809. Sus padres
             murieron cuando él todavía era niño, y se dedicó a la escritura de
-            relatos cortos, intentado hacer de esta su forma de vida (primer
+            relatos cortos, intentado hacer de esta su forma de vida (fue el primer
             escritor estadounidense en intentar esto)
           </p>
         </div>
       </section>
-      <section className="section" id="dato2">
+      <section className="section" data-aos="fade-down" id="dato2">
         <div className="content">
           <img src="../src/poeCatterina.jpg" alt="Edgar Allan Poe" />
           <p>
@@ -28,7 +26,7 @@ const Biography = () => {
           </p>
         </div>
       </section>
-      <section className="section" id="dato3">
+      <section className="section" data-aos="fade-down" id="dato3">
         <div className="content">
           <img src="../src/virginiaEdgar.webp" alt="Virginia & Edgar" />
           <p>

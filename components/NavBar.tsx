@@ -7,7 +7,7 @@ const NavBar = () => {
     <header >
       <nav className="fade-in">
         <div className="img">
-          <img src="../src/EdgarAllanPoe.jpg" alt="Edgar Allan Poe" />
+          <img src="../public/img/EdgarAllanPoe.jpg" alt="Edgar Allan Poe" />
           <h1>Edgar Allan Poe</h1>
         </div>
 

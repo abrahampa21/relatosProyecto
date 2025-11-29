@@ -1,3 +1,5 @@
+
+
 const Biography = () => {
   return (
     <div className="sections-div">

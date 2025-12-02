@@ -34,7 +34,8 @@ header {
   background-color: #000;
   color: #fff;
   position: relative;
-  padding: 15px 20px;
+  padding: 12px 20px;
+  z-index: 1000;
 }
 
 header h1 {
@@ -84,16 +85,24 @@ nav .links-button {
 }
 
 .button-books {
-  background-color: rgb(21, 32, 48);
-  padding: 1rem 1.5rem;
-  border-radius: 20px;
-  transition: 0.3s ease-in-out;
+  background-color: #152030;
+  padding: 0.9rem 1.6rem;
+  border-radius: 14px;
+  color: #f0f4ff;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.button-books:hover{
-  background-color: rgb(153, 27, 27);
+.button-books:hover {
+  background-color: #b41c1c;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
 }
-
 
 main .title {
   font-family: sans-serif;
@@ -105,15 +114,15 @@ main .title {
   color: #fff;
 }
 
-.section:nth-child(1) {
-  height: calc(100dvh - 104px);
-}
-
 .section {
-  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100dvh;
+}
+
+#intro {
+  height: calc(100dvh - 104px);
 }
 
 .section img {
@@ -143,8 +152,8 @@ main .title {
   width: 500px;
   font-size: 21px;
   text-align: left;
+  line-height: 1.6;
 }
-
 
 /*Story reader*/
 .btn-story {
@@ -183,13 +192,12 @@ main .title {
   font-size: 35px;
 }
 
-/* Asegura que el menú siempre esté por encima de la imagen y otros elementos */
 .menu {
+  position: absolute;
   opacity: 0;
   transform: translateY(-20px);
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  position: absolute;
   top: 85%;
   right: 30px;
   background-color: white;
@@ -197,11 +205,10 @@ main .title {
   padding: 10px;
   margin: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(90, 0, 0, 0.85);
   backdrop-filter: blur(30px);
   height: fit-content;
   border-radius: 10px;
-  z-index: 9999;
 }
 
 .menu .button-books {
@@ -217,6 +224,14 @@ main .title {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+/*Story reader*/
+.main-reader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /*Footer*/
@@ -249,7 +264,7 @@ footer .fa-brands {
 
 .img-footer {
   width: 130px;
-  height: 150px;
+  height: 165px;
   border-radius: 50%;
   margin-left: 40px;
 }
@@ -287,8 +302,8 @@ footer h3 {
   }
 }
 
-@media (min-height: 900px){
-  .main-reader{
+@media (min-height: 900px) {
+  .main-reader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,7 +315,8 @@ footer h3 {
   header h1 {
     font-size: 25px;
   }
-  nav .links a, .button-books {
+  nav .links a,
+  .button-books {
     font-size: 16px;
   }
 }
@@ -348,7 +364,7 @@ footer h3 {
     font-size: 14px;
   }
 
-    .section img {
+  .section img {
     width: 250px;
     height: 250px;
   }
@@ -359,21 +375,23 @@ footer h3 {
     text-align: center;
   }
 
-  .info{
+  .info {
     gap: 100px;
   }
 
-  .content-media{
+  .content-media {
     margin: 0 auto;
   }
 
-  .img-footer{
+  .img-footer {
     margin-left: 0;
   }
-
 }
 
 @media (max-width: 450px) {
+  .toggle #bars {
+    font-size: 27px;
+  }
   nav img {
     width: 60px;
   }
@@ -383,7 +401,7 @@ footer h3 {
   }
 
   header {
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
   header nav {
@@ -409,13 +427,13 @@ footer h3 {
     width: 100%;
   }
 
-  .info{
+  .info {
     gap: 50px;
     flex-direction: column;
     align-items: center;
   }
 
-  .img-footer{
+  .img-footer {
     order: -1;
     margin: 0 auto;
   }

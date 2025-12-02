@@ -13,4 +13,5 @@ export interface Story {
     animationType: AnimationType,
     characterImage: string; 
     cardImage: string; 
+    book: string
 }

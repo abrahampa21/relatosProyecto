@@ -11,6 +11,7 @@ export const stories: Story[] = [
         animationType: AnimationType.Raven,
         characterImage: "img/cuervo.jpg",
         cardImage: "img/raven2.webp",
+        book: "src/Antología - Edgar Allan Poe.pdf",
         fullText: `
 En una noche oscura y lúgubre, mientras meditaba, débil y cansado,
 sobre muchos volúmenes extraños y curiosos de sabiduría olvidada—
@@ -28,6 +29,7 @@ Solo eso y nada más».
         animationType: AnimationType.BlackCat,
         characterImage: "img/gn.jpg",
         cardImage: "img/bc.jpg",
+        book: "src/Antología - Edgar Allan Poe.pdf",
         fullText: `
 Para la narración más salvaje y a la vez más sencilla que estoy a punto de escribir, no espero ni solicito que me crean. Sería una locura esperarlo, en un caso donde mis propios sentidos rechazan su propia evidencia. Sin embargo, no estoy loco, y ciertamente no sueño. Pero mañana muero, y hoy quisiera desahogar mi alma.
 ... [Continuará] ...
@@ -40,6 +42,7 @@ Para la narración más salvaje y a la vez más sencilla que estoy a punto de es
         animationType: AnimationType.Morgue,
         characterImage: "img/lcdlcm.jpg",
         cardImage: "img/orangutan.jpg",
+        book: "src/Los Crímenes De La Calle Morgue.pdf",
         fullText: `
 Las características mentales que se consideran analíticas, en sí mismas, son poco susceptibles de análisis. Las apreciamos únicamente por sus efectos. Sabemos de ellas, entre otras cosas, que cuando se poseen en exceso, constituyen para quien las posee una fuente de vívido disfrute.
 ... [Continuará] ...
@@ -52,6 +55,7 @@ Las características mentales que se consideran analíticas, en sí mismas, son 
         animationType: AnimationType.Belfry,
         characterImage: "img/belfry.jpg",
         cardImage: "img/tdib.jpg",
+        book: "src/Antología - Edgar Allan Poe.pdf",
         fullText: `
 Todo el mundo sabe, en términos generales, que el lugar más hermoso del mundo es —o, por desgracia, era— el municipio holandés de Vondervotteimittiss. Sin embargo, como se encuentra algo alejado de las carreteras principales, en una ubicación un tanto apartada, quizá muy pocos de mis lectores lo hayan visitado alguna vez.
 ... [Continuará] ...

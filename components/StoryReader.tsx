@@ -28,7 +28,7 @@ const StoryReader: React.FC<StoryReaderProps> = ({ story, onGoBack }) => {
   }, []);
 
   return (
-    <div className="main-reader min-h-screen bg-black pb-24 relative">
+    <div className="main-reader bg-black  relative">
       {story.animationType !== AnimationType.BlackCat ||
         (story.animationType !== AnimationType.Morgue && (
           <StoryAmbiance
@@ -36,10 +36,6 @@ const StoryReader: React.FC<StoryReaderProps> = ({ story, onGoBack }) => {
             scrollProgress={scrollProgress}
           />
         ))}
-      <div
-        className="fixed top-0 left-0 h-1 bg-red-800 z-50 transition-all duration-100 ease-linear"
-        style={{ width: `${scrollProgress}%` }}
-      />
 
       <button
         onClick={onGoBack}
@@ -66,7 +62,14 @@ const StoryReader: React.FC<StoryReaderProps> = ({ story, onGoBack }) => {
           {story.fullText}
         </article>
         <div className="btn-story">
-          <a href="#">Descarga como PDF</a>
+          <a
+            href={story.book}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Descargar PDF
+          </a>
         </div>
       </div>
     </div>

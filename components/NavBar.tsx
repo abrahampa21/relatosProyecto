@@ -1,10 +1,32 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  const toggleRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const menu = menuRef.current;
+      const toggle = toggleRef.current;
+
+      if (!menu || !toggle) return;
+
+      const clickedOutsideMenu = !menu.contains(event.target as Node);
+      const clickedOutsideToggle = !toggle.contains(event.target as Node);
+
+      if (clickedOutsideMenu && clickedOutsideToggle) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   return (
-    <header >
+    <header>
       <nav className="fade-in">
         <div className="img">
           <img src="img/EdgarAllanPoe.jpg" alt="Edgar Allan Poe" />
@@ -12,10 +34,11 @@ const NavBar = () => {
         </div>
 
         <div className="links-button">
-          {/* BOTÓN HAMBURGUESA */}
+          {/* Toggle */}
           <div
             className="toggle"
             id="toggle"
+            ref={toggleRef}
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <i
@@ -24,13 +47,17 @@ const NavBar = () => {
             ></i>
           </div>
 
-          {/* Menú mobile  */}
-          <div className={`menu  ${menuOpen ? "menu-open" : ""}`} id="menu">
+          {/* Menú mobile */}
+          <div
+            className={`menu ${menuOpen ? "menu-open" : ""}`}
+            id="menu"
+            ref={menuRef}
+          >
             <li>
-              <a href="#dato2">Carrera</a>
+              <a href="#carrera">Carrera</a>
             </li>
             <li>
-              <a href="#dato3">Muerte y misterio</a>
+              <a href="#muerte">Muerte y misterio</a>
             </li>
             <li>
               <a href="#relatos">Relatos</a>
@@ -42,19 +69,23 @@ const NavBar = () => {
             </li>
           </div>
 
-          {/* Normal menú  */}
+          {/* Normal menú */}
           <ul className="links">
             <li>
-              <a href="#dato2">Carrera</a>
+              <a href="#carrera">Carrera</a>
             </li>
             <li>
-              <a href="#dato3">Muerte y misterio</a>
+              <a href="#muerte">Muerte y misterio</a>
             </li>
             <li>
               <a href="#relatos">Relatos</a>
             </li>
           </ul>
-          <a href="img/Antología - Edgar Allan Poe.pdf" download className="button-books">
+          <a
+            href="src/Antología - Edgar Allan Poe.pdf"
+            download
+            className="button-books"
+          >
             ¡Descarga su antología!
           </a>
         </div>

@@ -32,7 +32,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 800,
       once: false,
       easing: "ease-out",
     });

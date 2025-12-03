@@ -26,11 +26,11 @@ const StoryCard: React.FC<StoryCardProps> = ({ story, onSelect }) => {
 
   return (
     <div
-      className="group bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-lg p-6 text-center cursor-pointer transform hover:scale-105 hover:border-red-800/70 hover:shadow-2xl hover:shadow-red-900/50 transition-all duration-300 ease-in-out relative overflow-hidden aspect-[3/4] flex flex-col justify-center"
+      className="story-card-div group bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-lg p-6 text-center cursor-pointer transform hover:scale-105 hover:border-red-800/70 hover:shadow-2xl hover:shadow-red-900/50 transition-all duration-300 ease-in-out relative overflow-hidden aspect-[3/4] flex flex-col justify-center"
       onClick={() => onSelect(story)}
     >
         <div 
-            className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-20"
+            className="story-card absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-20"
             style={{ backgroundImage: `url("${story.cardImage}")` }}
         />
         <div className="absolute inset-0 bg-black opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>

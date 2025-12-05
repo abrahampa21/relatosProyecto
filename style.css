@@ -132,7 +132,6 @@ main .title {
   transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
-
 .section img:hover {
   transform: scale(1.05);
 }
@@ -161,7 +160,7 @@ main .title {
   line-height: 1.6;
 }
 
-.section h2{
+.section h2 {
   font-size: 23px;
   text-align: center;
   text-transform: uppercase;
@@ -183,9 +182,6 @@ main .title {
     clip-path: inset(0 0 0 0);
   }
 }
-
-
-
 
 /*Story reader*/
 .btn-story {
@@ -298,7 +294,6 @@ footer .fa-brands {
   width: 130px;
   height: 165px;
   border-radius: 50%;
-  margin-left: 40px;
 }
 
 footer .fa-brands:nth-child(4) {
@@ -310,16 +305,95 @@ footer .icons {
   gap: 1rem;
 }
 
-footer h3 {
-  font-size: 18px;
-}
-
 .social-medias {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
+}
+.content-media {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+footer h3::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0;
+  width: 60px;
+  height: 3px;
+  background: #b41c1c;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+footer:hover h3::after {
+  width: 0px;
+}
+
+.icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icons i {
+  background: #fff;
+  color: #111;
+  border-radius: 100%;
+  font-size: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.icons i:hover {
+  transform: translateY(-6px) scale(1.1);
+  background: #b41c1c;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(180, 28, 28, 0.5);
+}
+
+.icons i {
+  opacity: 0;
+  animation: iconFade 0.6s ease forwards;
+}
+
+.icons i:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.icons i:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.icons i:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.icons i:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes iconFade {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*Animation*/
@@ -414,7 +488,6 @@ footer h3 {
   .img-footer {
     margin-left: 0;
   }
-
 }
 
 @media (max-width: 450px) {
@@ -442,7 +515,7 @@ footer h3 {
     height: 250px;
   }
 
-  .section .content{
+  .section .content {
     gap: 2rem;
   }
 
@@ -494,5 +567,7 @@ footer h3 {
   .btn-story {
     margin-top: 1.5rem;
   }
-
+  footer h3{
+    font-size: 15px;
+  }
 }

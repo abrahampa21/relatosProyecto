@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="info">
         <div className="credits">
           <p>
-            En honor al maestro del misterio y lo macabro: Edgar Allan Poe.{" "}
+            En honor al maestro del misterio y lo macabro: Edgar Allan Poe.
             <br />
             <i>"Las sombras cuentan historias... si sabes escucharlas"</i>
             <br />

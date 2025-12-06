@@ -46,8 +46,9 @@ const LandingPage: React.FC<LandingPageProps> = ({
           </div>
         ))}
       </div>
-      <div className="absolute bottom-4 text-xs text-gray-600 z-10 animate-pulse">
-        Mueve el cursor para ver las sombras...
+      <div className="absolute bottom-4 text-xm text-gray-100 z-10 animate-pulse">
+        <span className="hidden sm:inline">Mueve el cursor para ver las sombras...</span>
+        <span className="inline sm:hidden text-xs">Deslízate sobre la sección para ver cada card</span>
       </div>
     </div>
   );
